@@ -50,9 +50,41 @@ body {
   margin-bottom: 2rem;
 }
 
-.m-divider {
-  display: none;
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
+
+.divider div {
+  padding: 8px 2px;
+  background: var(--Cyan);
+  margin: 0 2px;
+  border-radius: 20px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  background: var(--Cyan);
+  height: 1px;
+  width: 45%;
+}
+
+.divider::before{
+  margin-right: 5px;
+}
+
+.divider::after {
+  margin-left: 5px;
+}
+
+
+
+/* .m-divider {
+  display: none;
+} */
 
 .advice-box p {
   color: var(--Cyan);
@@ -91,7 +123,7 @@ a {
   color: var(--Green);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 640px) {
   .advice-box {
     max-width: 95%;
     padding: 1rem;
