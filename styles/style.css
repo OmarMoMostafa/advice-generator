@@ -94,6 +94,17 @@ a {
 @media screen and (max-width: 375px) {
   .advice-box {
     max-width: 95%;
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .advice-box h5 {
+    margin-bottom: 1rem;
+  }
+
+  .advice-box p {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
   }
 
   .d-divider {
